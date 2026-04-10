@@ -121,4 +121,4 @@ construction-cost-dashboard/
 ---
 
 ## Status
-Project setup complete. Currently building dataset and Excel model.
+Project setup complete. Base Excel dataset and EVM calculation model created, including PV, EV, AC, CV, SV, CPI, and SPI.
