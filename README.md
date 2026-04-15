@@ -1,124 +1,131 @@
-# Construction Cost & Performance Dashboard (BoQ + EVM + S-Curve)
+# Construction Cost & Performance Dashboard (Power BI)
 
-## Project Overview
-This project simulates a real-world construction project to demonstrate cost control, project performance tracking, and decision-making using Excel and Power BI.
+## Overview
+This project presents a construction project controls dashboard built using Excel and Power BI. It applies Earned Value Management (EVM) to track project cost and schedule performance, providing clear insights into budget utilisation and project progress.
 
-The dashboard replicates how Quantity Surveyors (QS) and Project Controls professionals monitor budget, cost, and progress on a live construction project.
+---
+
+## Dashboard Preview
+
+![Dashboard Overview](screenshots/dashboard_overview.png)
+
+### Additional Views
+
+![Cost Analysis](screenshots/cost_analysis.png)
+
+![Progress Analysis](screenshots/progress_analysis.png)
 
 ---
 
 ## Objective
-To build an end-to-end construction analytics project that demonstrates:
-
-- Budget vs actual cost tracking  
-- Bill of Quantities (BoQ) structure  
-- Planned vs actual progress comparison  
-- Earned Value Management (EVM)  
-- S-curve analysis  
-- Data-driven commercial decision-making  
+To simulate a real-world construction project environment and demonstrate:
+- Cost monitoring (Budget vs Actual)
+- Schedule tracking (Planned vs Actual progress)
+- Performance measurement using EVM metrics (CPI, SPI)
 
 ---
 
 ## Why This Project
-I am transitioning into construction, project controls, and quantity surveying (QS) roles by applying my background in data analysis, Excel, and Power BI.
+This project demonstrates practical skills relevant to:
+- Project Controls / PMO roles  
+- Construction cost analysis  
+- Data-driven decision making  
 
-This project bridges my existing experience with construction-style commercial reporting and demonstrates my ability to work with project performance data in a structured and practical way.
+It focuses on solving a real business problem rather than just building visuals.
 
 ---
 
 ## Project Workflow
-This project follows a structured workflow similar to real-world project controls:
 
-1. Design a realistic construction dataset (BoQ, costs, progress)  
-2. Build Excel data model and calculations  
-3. Implement Earned Value Management (EVM) metrics  
-4. Create S-curve analysis (planned vs actual progress)  
-5. Develop Power BI dashboard  
-6. Generate insights for decision-making  
-7. Publish project with documentation on GitHub  
+1. Created structured dataset in Excel:
+   - Bill of Quantities (BoQ)
+   - Monthly costs
+   - Progress tracking
+
+2. Built EVM model in Excel:
+   - Planned Value (PV)
+   - Earned Value (EV)
+   - Actual Cost (AC)
+   - Cost Variance (CV)
+   - Schedule Variance (SV)
+   - Cost Performance Index (CPI)
+   - Schedule Performance Index (SPI)
+
+3. Loaded data into Power BI:
+   - Cleaned data using Power Query
+   - Created a category dimension table
+   - Established relationships between tables
+
+4. Developed dashboard:
+   - KPI cards for summary metrics
+   - Cost analysis by category
+   - Monthly cost trend
+   - S-curve (planned vs actual progress)
+   - Insight summary
 
 ---
 
 ## Dataset Description
 
-### 1. Bill of Quantities (BoQ)
-- Defines project cost structure by category (e.g. Groundworks, Structure, MEP, Finishes)  
-- Contains total budget allocation per category  
+- **BoQ (Bill of Quantities):**
+  - Categories: Structure, MEP, Envelope, Finishes, Groundworks, External
+  - Budget allocated per category
 
-### 2. Monthly Costs (Actual Spend)
-- Tracks actual project spending over time  
-- Enables comparison against planned budget  
+- **Monthly Costs:**
+  - Actual cost recorded per category and month
 
-### 3. Planned vs Actual Progress
-- Tracks percentage completion over time  
-- Forms the basis of S-curve analysis  
-
-### 4. Project Summary
-- Overall project value and duration  
+- **Progress Data:**
+  - Planned and actual progress percentages over time
 
 ---
 
 ## Key Concepts Implemented
 
-### Budget vs Actual Tracking
-Compare planned budget against actual cost to identify overspending or underspending.
-
-### Earned Value Management (EVM)
-Used to evaluate project performance:
-
-- Planned Value (PV)  
-- Earned Value (EV)  
-- Actual Cost (AC)  
-
-Performance metrics:
-
-- Cost Variance (CV = EV - AC)  
-- Schedule Variance (SV = EV - PV)  
-- Cost Performance Index (CPI = EV / AC)  
-- Schedule Performance Index (SPI = EV / PV)  
+- Earned Value Management (EVM)
+- Cost and schedule performance analysis
+- Data modelling (dimension and fact tables)
+- Power BI relationships and aggregation
+- Dashboard design for business users
 
 ---
 
-## S-Curve Analysis
-- Visual comparison of planned vs actual progress over time  
-- Used to identify delays and performance gaps  
+## Key Findings
 
----
+- Total Budget: £9.50M  
+- Total Actual Cost: £9.46M  
+- Cost Performance Index (CPI): 0.96  
+- Schedule Performance Index (SPI): 0.96  
 
-## Expected Insights
-This dashboard is designed to support commercial and project control decisions by answering:
-
-- Is the project currently over or under budget?  
-- Is the project ahead or behind schedule?  
-- Which cost categories are driving overspend?  
-- How does actual progress compare to planned progress?  
-- Is project performance improving or deteriorating over time?  
-- What early warning signals indicate potential project risk?  
-
-These insights reflect real-world decision-making in construction project controls and quantity surveying.
+- Project is slightly behind schedule and slightly over budget at completion  
+- Cost distribution varies across major categories such as Structure and MEP  
+- Progress tracking highlights consistent lag between planned and actual execution  
 
 ---
 
 ## Tools Used
-- Excel (data modelling and calculations)  
-- Power BI (dashboard and visualisation)  
-- VS Code (project environment)  
-- Git and GitHub (version control and portfolio)  
+
+- Excel (data preparation and EVM calculations)
+- Power BI (data modelling and visualisation)
 
 ---
 
 ## Project Structure
 
+```
 construction-cost-dashboard/
-│
-├── data/  
-├── docs/  
-│   └── progress_log.md  
-├── screenshots/  
-├── README.md  
-└── .gitignore  
+├── data/
+│   ├── construction_cost_dashboard.xlsx
+│   └── construction_dashboard.pbix
+├── docs/
+│   └── progress_log.md
+├── screenshots/
+│   ├── dashboard_overview.png
+│   ├── cost_analysis.png
+│   └── progress_analysis.png
+├── README.md
+```
 
 ---
 
 ## Status
-Project setup complete. Base Excel dataset and EVM calculation model created, including PV, EV, AC, CV, SV, CPI, and SPI.
+Completed. Dashboard built, validated, and prepared for portfolio use.

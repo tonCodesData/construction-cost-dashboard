@@ -38,3 +38,10 @@
 - Built monthly cost trend chart
 - Developed S-curve for planned vs actual progress
 - Added insights interpreting project performance
+
+## Step 6 - Final documentation and portfolio polish
+- Updated dashboard insights to match final CPI and SPI values
+- Captured dashboard screenshots for GitHub presentation
+- Added dashboard preview images to README
+- Added key findings summary to README
+- Finalised repository structure for portfolio use
