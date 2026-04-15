@@ -24,3 +24,17 @@
 - Linked cumulative actual cost (AC) into the EVM model
 - Calculated Cost Variance (CV) and Schedule Variance (SV)
 - Calculated Cost Performance Index (CPI) and Schedule Performance Index (SPI)
+
+## Step 4 - Power BI cost analysis
+- Loaded Excel model into Power BI
+- Created category dimension table for proper data modeling
+- Built Budget vs Actual cost chart by category
+- Built monthly cost trend line chart
+- Fixed data type and aggregation issues during visual creation
+
+## Step 5 - Power BI dashboard completion
+- Built KPI cards for budget, actual cost, CPI, and SPI
+- Created cost analysis visuals by category
+- Built monthly cost trend chart
+- Developed S-curve for planned vs actual progress
+- Added insights interpreting project performance
